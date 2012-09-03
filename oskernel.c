@@ -77,7 +77,6 @@ os_isr_exit()
 
 	/*如果嵌套中断为0，任务调度没有上锁，则计算最高任务 */
 	/*代码与os_task_sched()相差不大，但有区别 */
-	/*vie_os_isrexit全局变量来保存商，不是在栈上的局部变量 */
 	if ((--vie_os_isrnumber | vie_os_locksched) == 0) {
 		vie_os_isrexit = array_cn_un_taskmap[vie_os_ready];
 		vie_os_prio_high = (INT8U) (vie_os_isrexit << 3)
