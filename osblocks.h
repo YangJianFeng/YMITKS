@@ -24,7 +24,7 @@ struct os_blocks_tk {
 	struct os_blocks_tk *osbt_next;	/*指向下一个链表 */
 
 #if (OS_Q_EN && (OS_MAX_QS >= 2)) || OS_MBOX_EN || OS_SEM_EN
-	OS_EVENT *osbt_event;	        /*指向事件控制块的指针，暂不懂 */
+	OS_EVENT *osbt_event;	        /*指向事件控制块的指针*/
 	                                /*OS_EVENT类型未写 */
 #endif
 
