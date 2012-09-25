@@ -47,3 +47,7 @@ oskernel.c   : 系统函数在这里
      前面加有cs      const常量
      前面加有vie     变量
      前面加有p       指针变量
+    
+声明:
+     本代码可免费下载学习研究，但不得用于任何商业目的
+     The code free download learning research, but may not be used for any commercial purpose.
